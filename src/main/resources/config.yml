@@ -1,0 +1,46 @@
+# NoCPVP Configuration
+# After editing, run: /nocpvp reload
+
+ender-crystal:
+  # Set to true to prevent Ender Crystals from dealing any damage
+  disable-damage: true
+
+debuff-potions:
+  # Set to true to block debuff potion effects from being applied to players
+  enabled: true
+  # Set to true to also block players from throwing debuff splash/lingering potions
+  block-throw: true
+  # List of PotionEffectType names to block.
+  # Full list: https://jd.papermc.io/paper/1.21/org/bukkit/potion/PotionEffectType.html
+  blocked-effects:
+    - POISON
+    - WITHER
+    - WEAKNESS
+    - SLOWNESS
+    - MINING_FATIGUE
+    - NAUSEA
+    - BLINDNESS
+    - HUNGER
+    - UNLUCK
+    - DARKNESS
+    - INSTANT_DAMAGE
+
+non-craftable-tipped-arrows:
+  # Set to true to block crafting of tipped arrows with certain potion types
+  enabled: true
+  # List of PotionType names whose tipped arrows cannot be crafted.
+  # Full list: https://jd.papermc.io/paper/1.21/org/bukkit/potion/PotionType.html
+  blocked-potion-types:
+    - SLOW_FALLING
+
+respawn-anchor:
+  # Set to true to block respawn anchor explosions (deals damage in Overworld/End)
+  disable-explosion: true
+
+beds:
+  # Set to true to block bed explosions (deals damage in Nether/End)
+  disable-explosion: true
+
+# List of world names where all NoCPVP protections apply.
+# Leave empty to apply protections in all worlds.
+enabled-worlds: []
