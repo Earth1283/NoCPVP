@@ -7,7 +7,7 @@ ender-crystal:
 
 debuff-potions:
   # Set to true to block debuff potion effects from being applied to players
-  enabled: true
+  enabled: false
   # Set to true to also block players from throwing debuff splash/lingering potions
   block-throw: true
   # List of PotionEffectType names to block.

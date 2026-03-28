@@ -2,3 +2,8 @@
 /.gradle/
 /build/
 /build/classes/kotlin/main/
+.idea/
+.kotlin/
+build/
+.gralde/
+*.DS_Store
