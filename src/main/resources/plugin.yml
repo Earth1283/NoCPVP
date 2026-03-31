@@ -1,14 +1,14 @@
 name: NoCPVP
 version: '1.0'
 main: io.github.Earth1283.noCPVP.NoCPVP
-api-version: '1.21'
+api-version: 1.13
 load: STARTUP
 authors: [ Earth1283 ]
-description: "Disables crystal PVP"
+description: Disables Crystal PVP on your server
 
 commands:
   nocpvp:
-    description: NoCPVP management command
+    description: Reload the noCPVP configuration from disk
     usage: /nocpvp reload
     permission: nocpvp.reload
 
