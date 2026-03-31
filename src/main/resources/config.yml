@@ -3,6 +3,7 @@
 
 ender-crystal:
   # Set to true to prevent Ender Crystals from dealing any damage
+  # Note: terrain will still get blown up
   disable-damage: true
 
 debuff-potions:
@@ -11,7 +12,6 @@ debuff-potions:
   # Set to true to also block players from throwing debuff splash/lingering potions
   block-throw: true
   # List of PotionEffectType names to block.
-  # Full list: https://jd.papermc.io/paper/1.21/org/bukkit/potion/PotionEffectType.html
   blocked-effects:
     - POISON
     - WITHER
@@ -29,9 +29,10 @@ non-craftable-tipped-arrows:
   # Set to true to block crafting of tipped arrows with certain potion types
   enabled: true
   # List of PotionType names whose tipped arrows cannot be crafted.
-  # Full list: https://jd.papermc.io/paper/1.21/org/bukkit/potion/PotionType.html
   blocked-potion-types:
     - SLOW_FALLING
+    - POISON
+  # - ... add your own
 
 respawn-anchor:
   # Set to true to block respawn anchor explosions (deals damage in Overworld/End)
@@ -43,4 +44,4 @@ beds:
 
 # List of world names where all NoCPVP protections apply.
 # Leave empty to apply protections in all worlds.
-enabled-worlds: []
+enabled-worlds: [disabledWorld1, world2, exampleworld3]
